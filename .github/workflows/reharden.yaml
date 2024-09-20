@@ -247,4 +247,4 @@ jobs:
           name: GDS_${{ matrix.project }}
           path: |
             ${{ matrix.project }}/runs/*
-            ${{ matrix.project }}/precheck/*
+            ${{ matrix.project }}/tt/precheck/*
