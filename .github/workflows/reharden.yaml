@@ -7,7 +7,7 @@ on:
       openlane_tag:
         description: 'Openlane tag'
         required: false
-        default: '2.0.8'
+        default: '2.1.5'
 
 jobs:
   reharden:
@@ -153,7 +153,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      OPENLANE_TAG: ${{ github.event.inputs.openlane_tag || '2.0.8' }}
+      OPENLANE_TAG: ${{ github.event.inputs.openlane_tag || '2.1.5' }}
       PDK_ROOT: /home/runner/.volare
       PDK: sky130A
 
@@ -169,7 +169,7 @@ jobs:
         with:
           repository: tinytapeout/tt-support-tools
           path: ${{ matrix.project }}/tt
-          ref: tt08
+          ref: tt09
 
       - name: Setup python
         uses: actions/setup-python@v5
