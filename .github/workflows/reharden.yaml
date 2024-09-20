@@ -159,7 +159,7 @@ jobs:
 
       # Tool versions:
       MAGIC_VERSION: 8.3.473
-      KLAYOUT_VERSION: 0.29.0
+      KLAYOUT_VERSION: 0.29.6
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
